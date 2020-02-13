@@ -1,0 +1,37 @@
+void setup()
+{
+  
+  pinMode(42,INPUT_PULLUP);
+   pinMode(59,INPUT_PULLUP);
+    pinMode(45,INPUT_PULLUP);
+     pinMode(62,INPUT_PULLUP);
+      pinMode(49,INPUT_PULLUP);
+     pinMode(66,INPUT_PULLUP);
+  Serial.begin(9600);
+  pinMode(75,OUTPUT);
+}
+
+void loop()
+{
+ int x1=digitalRead(42);
+ int x2=digitalRead(59);
+ int x3=digitalRead(45);
+ int x4=digitalRead(62);
+ int x5=digitalRead(49);
+ int x6=digitalRead(66);
+if(x1==0 &&x2==0&&x3==0&&x4==0&&x5==0&&x6==0)
+{
+  digitalWrite(75,HIGH);
+  Serial.println("Bump switch pressed");
+  delay(500);
+}
+else
+{
+    digitalWrite(75,LOW);
+
+  Serial.println("bump switch unpressed");
+  delay(500);
+}
+ 
+  
+}

@@ -1,0 +1,16 @@
+void setup()
+{
+  pinMode(75,OUTPUT);
+ 
+}
+
+void loop()
+{
+  for (int duty=0;duty<=255;duty++)
+{
+  analogWrite(75,duty);
+  delay(100);
+}
+ 
+  
+}

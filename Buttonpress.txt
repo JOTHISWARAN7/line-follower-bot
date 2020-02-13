@@ -1,0 +1,21 @@
+void setup()
+{
+  pinMode(76,OUTPUT);
+  pinMode(74,INPUT_PULLUP);
+  
+}
+
+void loop()
+{
+ int x=digitalRead(74);
+if(x==0)
+{
+  digitalWrite(76,HIGH);
+}
+else
+{
+  digitalWrite(76,LOW);
+}
+ 
+  
+}

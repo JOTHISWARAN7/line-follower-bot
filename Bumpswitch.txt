@@ -1,0 +1,25 @@
+void setup()
+{
+  
+  pinMode(42,INPUT_PULLUP);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+ int x=digitalRead(42);
+if(x==0)
+{
+  
+  Serial.println("Bump switch pressed");
+  delay(500);
+}
+else
+{
+  
+  Serial.println("bump switch unpressed");
+  delay(500);
+}
+ 
+  
+}

@@ -1,0 +1,28 @@
+void setup()
+{
+  pinMode(75,OUTPUT);
+  pinMode(76,OUTPUT);
+  pinMode(77,OUTPUT);
+}
+
+void loop()
+{
+  
+  digitalWrite(75,HIGH);
+    
+
+  delay(1000);
+  digitalWrite(75,LOW);
+  delay(1000);
+  digitalWrite(76,HIGH);
+  
+   delay(1000);
+   digitalWrite(76,LOW);
+  delay(1000);
+    digitalWrite(77,HIGH);
+     delay(1000);
+
+  digitalWrite(77,LOW); 
+  delay(1000);
+  
+}

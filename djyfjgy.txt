@@ -1,0 +1,13 @@
+<script type="text/javascript">
+    function validation(){
+        var name=document.getElementById('name').value;
+        var email=document.getElementById('name').value;
+        var password=document.getElementById('name').value;
+        if( name=='' || password=='' || email=='')
+        {
+            return false
+        }
+
+
+    }
+</script>

@@ -1,0 +1,25 @@
+void setup()
+{
+  pinMode(75,OUTPUT);
+  pinMode(73,INPUT_PULLUP);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+ int x=digitalRead(73);
+if(x==0)
+{
+  digitalWrite(75,HIGH);
+  Serial.print("pressed");
+  delay(1000);
+}
+else
+{
+  digitalWrite(75,LOW);
+  Serial.print("Released");
+  delay(1000);
+}
+ 
+  
+}
